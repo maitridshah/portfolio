@@ -16,7 +16,9 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+		  <li><a href="#volunteer">Volunteer</a></li>
           <li><a href="#contact">Contact</a></li>
+		  
         </ul>
       </div>
     </nav>
@@ -32,7 +34,9 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+		  <li><a href="#volunteer" onclick='toggleMenu()'>Volunteer</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+		  
         </div>
       </div>
     </nav>
@@ -94,6 +98,7 @@
               <p>1+ year <br />Embedded Software Engineer</p>
 			
               
+              
             </div>
             <div class="details-container">
               <img
@@ -107,22 +112,17 @@
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              I am an Aspiring Data Scientist with a unique background in Embedded Systems and Data Science. With 1 year of experience as an Embedded Systems Engineer, I gained strong skills in 
+			  problem-solving, data acquisition, and real-time analytics. My MSc in Data Science has equipped me with expertise in machine learning, statistical analysis, and big data technologies 
+			  to derive actionable insights and drive decision-making. I am passionate about leveraging AI \]and data-driven approaches to solve complex problems and optimize business outcomes. 
+			  I thrive in environments where I can combine analytical skills with technical expertise 
+			  to deliver impactful data solutions. My goal is to contribute to innovative, data-centric 
+			  projects and drive value through predictive modeling, automation, and AI solutions. 
             </p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+
     </section>
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
@@ -130,7 +130,7 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Data Science</h2>
             <div class="article-container">
               <article>
                 <img
@@ -139,7 +139,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>HTML</h3>
+                  <h3>Python & libraries</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -150,7 +150,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>CSS</h3>
+                  <h3>SQL</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -162,7 +162,18 @@
                   class="icon"
                 />
                 <div>
-                  <h3>JavaScript</h3>
+                  <h3>AWS, GCP</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+			  <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Power BI, Tableau</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -180,7 +191,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>PostgreSQL</h3>
+                  <h3>Microcontrollers</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -191,7 +202,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Node JS</h3>
+                  <h3>C/C++</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -202,7 +213,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Express JS</h3>
+                  <h3>ROS</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -221,12 +232,7 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
@@ -235,110 +241,79 @@
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+			  <video width="380" height="240" autoplay muted loop playsinline>
+					<source src="videos/obstacle.mp4" type="video/mp4">
+					
+					Your browser does not support the video tag.
+			  </video>
+              
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Obstacle Avoidance</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              This project mainly focuses on obstacle avoidance and traversal from point A to point B using the shortest path.
+			  The robot is build of a Raspberry pi 4, Lidar, L298N Dual H-bridge Motor Driver, Li-ion Battery and other things.
+			  It works based on the QR coded placed on the floor. Scanning each QR code gives the robot information 
+			  on where it's located and what's the destination. Then it generates a shortest path to the destination
+			  before traversing and also perform obstacle avoidance during traversal.
+			 
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+              <video width="380" height="240" autoplay muted loop playsinline>
+					<source src="videos/lidar.mp4 type="video/mp4">
+					
+					Your browser does not support the video tag.
+			  </video>
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Path Planning & Mapping</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              The main purpose of this project is to scan the area or the environment(static) where the roboto or agent will
+			  work. It is performaed in RViz(R vizualization), a software that uses Lidar to scan structure of the area to determine
+			  open and closed spaces. RViz is a part of ROS(Robot Operating System), which handles the software and the 
+			  hardware sides of the robot. After generating map, it can be used and implemented in anu number of robots.
+			  This is helpful in area where there are multiple agents which communicate with each other and the environment 
+			  such as agricultural fields or busy stations.
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+              <video width="380" height="240" autoplay muted loop playsinline>
+					<source src="videos/car.mp4" type="video/mp4">
+					
+					Your browser does not support the video tag.
+			  </video>
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Autonomous Pathplanning in Carla</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              This is my capstone project for MSc in Data Science. It uses Reinforcement Learning to traverse from point A
+			  to point B autonomously. The best thing about this project is, it doesn't uses any hardware. Yes, it is totally based on 
+			  software or simulator called Carla. It is equipped with pre-build agenets, maps and a real - life environment.
+			  Therefore it's easy to test any atonomous vehicle task in it. This project uses a prebuild map and some RL to 
+			  detect and generate a waypoint structure for the car to follow. 
             </div>
           </div>
 		  <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+              
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Student Attention & Exam Scores Association</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              The project is based on relevance of students' grades to the attention paid during the course work.
+			  It was implemented using Two - phase association algorithm mainly based on market basket analysis.
+			  An open dataset was used in the project and the result was that scores are directly proportional to the Attention
+			  and activity of a student. This output is useful when we have crisis like pandemic where everything is based online
+			  and no human contact. Mainly studies suffers from this as the teacher visibly or emonionally engaged with
+			  the students and it give students a benefit. As a result, the students is less interested in the learning. At that time, their
+			  activities can be monitored to determine who needs more attention from the professor. This project can also be 
+			  used where distance learning is applied.
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      
     </section>
-	 <section id="experience">
+	 <section id="volunteer">
       <p class="section__text__p1">Me as a</p>
       <h1 class="title">Volunteer</h1>
       <div class="experience-details-container">
@@ -347,22 +322,14 @@
             <h2 class="experience-sub-title">International Peer Advisor at U of R</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                
                 <div>
                   <h3>Leadership & event management</h3>
                   
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                
                 <div>
                   <h3>Cultural awareness & sensitivity</h3>
               
@@ -370,22 +337,14 @@
               </article>
               
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+              
                 <div>
                   <h3>Problem-solving & adaptability</h3>
              
                 </div>
               </article>
 			  <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                
                 <div>
                   <h3>communication & interpersonal skills</h3>
               
@@ -396,62 +355,41 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Embedded Software Engieer</h2>
+            <h2 class="experience-sub-title">Technical Fest Volunteer</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                
                 <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+                  <h3>Event coordination & setup</h3>
+                  
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+               
                 <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
+                  <h3>Crowd management & guidance</h3>
+                  
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+               
                 <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
+                  <h3>Onsite Registration & Checking</h3>
+                 
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+               
                 <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <h3>Technical Support</h3></h3>
+                  
                 </div>
               </article>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
